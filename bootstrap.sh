@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "installing dependencies"
 apt-get install -y apt-transport-https ca-certificates curl software-properties-common python-pip
-pip install --upgrade pip setuptools
+pip install --upgrade pip setuptools requests
 
 echo "adding docker repository"
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
