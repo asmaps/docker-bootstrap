@@ -1,8 +1,4 @@
 #!/bin/bash
-
-echo "Escalating to root"
-sudo su -
-
 echo "installing dependencies"
 apt-get install -y apt-transport-https ca-certificates curl software-properties-common python3-pip
 pip3 install --upgrade pip
