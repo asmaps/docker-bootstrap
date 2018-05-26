@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "installing dependencies"
-apt-get install -y apt-transport-https ca-certificates curl software-properties-common python3-pip
-pip3 install --upgrade pip
+apt-get install -y apt-transport-https ca-certificates curl software-properties-common python-pip
+pip install --upgrade pip
 
 echo "adding docker repository"
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
@@ -9,7 +9,7 @@ add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(
 
 echo "installing docker"
 apt-get update
-apt-get install docker-ce
+apt-get install -y docker-ce
 
 echo "installing docker-compose"
-pip3 install docker-compose
+pip install docker-compose
